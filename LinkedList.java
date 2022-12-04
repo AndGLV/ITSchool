@@ -119,6 +119,7 @@ public class LinkedList {
         if (founded != null) {
             _nodeToInsert.next = founded.next;
             founded.next = _nodeToInsert;
+            if (founded == this.tail) this.tail = _nodeToInsert;
             this.size++;
         }
     }
