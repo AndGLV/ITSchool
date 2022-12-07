@@ -93,6 +93,7 @@ public class LinkedList2 {
             if (iter.value == _value) {
                 if (this.tail == this.head) {
                     clear();
+                    return;
                 }
                 Node prev = iter.prev;
                 Node next = iter.next;
