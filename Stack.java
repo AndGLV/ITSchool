@@ -11,7 +11,8 @@ public class Stack<T> {
     }
 
     public T pop() {
-        return this.data.pop();
+        if (peek() != null) return this.data.pop();
+        return null;
     }
 
     public void push(T val) {
